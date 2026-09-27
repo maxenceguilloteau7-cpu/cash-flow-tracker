@@ -40,10 +40,8 @@
     min-height: 100vh;
   }
 
-  /* ── Layout ─────────────────────────── */
   .app { max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
 
-  /* ── Header ─────────────────────────── */
   .top-bar {
     display: flex; align-items: center; justify-content: space-between;
     margin-bottom: 2rem; flex-wrap: wrap; gap: 12px;
@@ -51,7 +49,6 @@
   .logo { font-size: 20px; font-weight: 900; letter-spacing: -.04em; color: var(--txt); }
   .logo span { color: var(--pos); }
 
-  /* ── Nav tabs ───────────────────────── */
   .nav {
     display: flex; background: var(--bg2); border: 1px solid var(--border);
     border-radius: 14px; overflow: hidden; margin-bottom: 2rem;
@@ -70,7 +67,6 @@
   .pg { display: none; }
   .pg.on { display: block; }
 
-  /* ── Section header ─────────────────── */
   .sec-hdr {
     display: flex; align-items: center; justify-content: space-between;
     margin-bottom: 1.5rem; flex-wrap: wrap; gap: 12px;
@@ -78,7 +74,6 @@
   .sec-title { font-size: 20px; font-weight: 800; letter-spacing: -.03em; }
   .sec-sub { font-size: 12px; color: var(--txt3); margin-top: 3px; font-weight: 500; }
 
-  /* ── Year switcher ──────────────────── */
   .yr-switch { display: flex; align-items: center; gap: 8px; }
   .yr-current {
     padding: 7px 14px; font-size: 14px; font-weight: 800; border-radius: 8px;
@@ -95,14 +90,12 @@
     width: 90px; padding: 7px 10px; font-size: 14px; font-weight: 800; text-align: center;
   }
 
-  /* ── Pie legend ─────────────────────── */
   .pie-wrap { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
   .pie-legend { flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 11px; }
   .pie-leg-item { display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 600; color: var(--txt2); gap: 10px; }
   .pie-leg-name { display: flex; align-items: center; gap: 8px; }
   .pie-leg-val { color: var(--txt); font-weight: 700; white-space: nowrap; }
 
-  /* ── KPI row ────────────────────────── */
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 2rem; }
   .kpi {
     background: var(--bg2); border: 1px solid var(--border); border-radius: 14px;
@@ -115,7 +108,6 @@
   .kpi-label { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--txt3); margin-bottom: 10px; }
   .kpi-value { font-size: 24px; font-weight: 900; letter-spacing: -.04em; }
 
-  /* ── Cards grid ─────────────────────── */
   .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
 
   .cat-card {
@@ -133,7 +125,6 @@
   .bar-bg { height: 3px; background: var(--bg3); border-radius: 2px; overflow: hidden; }
   .bar-fill { height: 3px; border-radius: 2px; }
 
-  /* Boîte simplifiée : nom + total en haut, séparés par une ligne, transactions en dessous */
   .cat-box-head {
     display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
     padding-bottom: 12px; border-bottom: 1px solid var(--border);
@@ -169,7 +160,6 @@
   .pos { color: var(--pos); }
   .neg { color: var(--neg); }
 
-  /* ── Add panel ──────────────────────── */
   .add-btn {
     padding: 8px 16px; font-size: 13px; font-weight: 700; border-radius: 9px;
     border: 1px solid var(--border); background: var(--bg3); color: var(--txt);
@@ -231,7 +221,6 @@
   }
   .confirm-btn:hover { opacity: .85; }
 
-  /* ── Chart box ──────────────────────── */
   .chart-box {
     background: var(--bg2); border: 1px solid var(--border); border-radius: 16px;
     padding: 1.5rem;
@@ -239,7 +228,6 @@
   .chart-legend { display: flex; gap: 18px; margin-bottom: 1.25rem; flex-wrap: wrap; }
   .leg-item { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--txt2); }
 
-  /* ── Fortune ────────────────────────── */
   .fort-split { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-bottom: 1.5rem; }
   .fort-card {
     background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem;
@@ -261,7 +249,6 @@
   .fort-total-label { font-size: 16px; font-weight: 800; color: var(--txt); }
   .fort-total-val { font-size: 32px; font-weight: 900; letter-spacing: -.04em; }
 
-  /* ── Data table ─────────────────────── */
   .tbl-section { margin-bottom: 16px; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
   .tbl-cat-hdr {
     display: flex; align-items: center; gap: 12px; padding: 14px 18px;
@@ -321,7 +308,6 @@
   }
   .del-btn:hover { opacity: 1; }
 
-  /* ── Color panel ────────────────────── */
   #colorPanel {
     position: fixed; top: 0; right: -380px; width: 360px; height: 100vh;
     background: var(--bg2); border-left: 1px solid var(--border);
@@ -352,7 +338,6 @@
   }
   .cp-reset:hover { background: var(--bg4); }
 
-  /* ── FAB ────────────────────────────── */
   .fab {
     position: fixed; bottom: 1.75rem; right: 1.75rem; width: 48px; height: 48px;
     border-radius: 50%; border: 1px solid var(--border); background: var(--bg3);
@@ -382,10 +367,8 @@
 </head>
 <body>
 
-<!-- Overlay -->
 <div id="overlay" onclick="closePanel()"></div>
 
-<!-- Color panel -->
 <div id="colorPanel">
   <div class="cp-hdr">
     <span class="cp-title">🎨 Couleurs</span>
@@ -408,22 +391,29 @@
   <button class="cp-reset" onclick="resetColors()"><i class="ti ti-refresh" style="margin-right:6px"></i>Réinitialiser</button>
 </div>
 
-<!-- FAB -->
 <button class="fab" onclick="openPanel()"><i class="ti ti-palette"></i></button>
 
-<!-- Écran de connexion (affiché tant qu'on n'est pas connecté) -->
 <div id="loginScreen" style="display:flex;min-height:100vh;align-items:center;justify-content:center;flex-direction:column;gap:20px;padding:20px;">
   <div class="logo" style="font-size:32px">cash<span>flow</span></div>
-  <p style="color:var(--txt3);font-size:14px;text-align:center;max-width:320px">Entre ton email et un code (au moins 6 caractères) pour accéder à tes données.</p>
 
-  <div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px">
+  <div id="emailStep" style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px">
+    <p style="color:var(--txt3);font-size:14px;text-align:center;margin:0 0 4px">Entre ton adresse email pour continuer.</p>
     <input id="loginEmail" type="email" placeholder="ton@email.com" autocomplete="email"
       style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;color:var(--txt);font-size:14px;font-family:inherit;width:100%">
+    <button class="save-btn" onclick="goToCodeStep()" style="justify-content:center;padding:12px;font-size:14px">
+      Continuer
+    </button>
+    <p id="emailErr" style="display:none;color:var(--neg);font-size:12px;text-align:center;margin:0"></p>
+  </div>
+
+  <div id="codeStep" style="display:none;flex-direction:column;gap:10px;width:100%;max-width:320px">
+    <p style="color:var(--txt3);font-size:14px;text-align:center;margin:0 0 4px">Entre ton code de connexion.</p>
     <input id="loginCode" type="password" placeholder="Ton code" autocomplete="current-password"
       style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;color:var(--txt);font-size:14px;font-family:inherit;width:100%">
     <button class="save-btn" onclick="login()" style="justify-content:center;padding:12px;font-size:14px">
       <i class="ti ti-check"></i>&nbsp;Se connecter
     </button>
+    <button onclick="backToEmailStep()" style="background:none;border:none;color:var(--txt3);font-size:12px;cursor:pointer;font-family:inherit">← Changer d'adresse email</button>
     <p style="color:var(--txt3);font-size:11px;text-align:center;margin:0">La première fois, ce code crée ton compte. Note-le bien — il te sera redemandé à chaque connexion.</p>
     <p id="loginErr" style="display:none;color:var(--neg);font-size:12px;text-align:center;margin:0"></p>
   </div>
@@ -432,7 +422,6 @@
 <div class="app" id="appRoot" style="display:none">
 
 
-  <!-- Logo / top bar -->
   <div class="top-bar">
     <div class="logo">cash<span>flow</span></div>
     <div style="display:flex;align-items:center;gap:12px">
@@ -442,7 +431,6 @@
   </div>
   <div class="toast" id="toast">✓ Enregistré</div>
 
-  <!-- Nav -->
   <nav class="nav">
     <button class="nb on" onclick="goTab(0,this)"><i class="ti ti-layout-cards"></i>Catégories</button>
     <button class="nb"    onclick="goTab(1,this)"><i class="ti ti-chart-line"></i>PNL</button>
@@ -451,7 +439,6 @@
     <button class="nb"    onclick="goTab(4,this)"><i class="ti ti-plus"></i>Ajouter</button>
   </nav>
 
-  <!-- ══ PAGE 0 : Catégories ══════════════════════════════ -->
   <div class="pg on" id="tab0">
     <div class="sec-hdr">
       <div><div class="sec-title">Par catégorie</div><div class="sec-sub">Totaux & dernières transactions</div></div>
@@ -459,7 +446,6 @@
     <div class="cards-grid" id="kpi0" style="margin-bottom:1.5rem"></div>
   </div>
 
-  <!-- ══ PAGE 1 : PNL ═════════════════════════════════════ -->
   <div class="pg" id="tab1">
     <div class="sec-hdr">
       <div><div class="sec-title">Courbe PNL</div><div class="sec-sub">Profit &amp; loss mensuel et cumulé</div></div>
@@ -487,7 +473,6 @@
     </div>
   </div>
 
-  <!-- ══ PAGE 2 : Fortune ═════════════════════════════════ -->
   <div class="pg" id="tab2">
     <div class="sec-hdr">
       <div><div class="sec-title">Fortune nette</div></div>
@@ -507,7 +492,6 @@
     <div class="fort-rows" id="fortRows"></div>
   </div>
 
-  <!-- ══ PAGE 3 : Données ════════════════════════════════ -->
   <div class="pg" id="tab3">
     <div class="sec-hdr">
       <div><div class="sec-title">Toutes les données</div><div class="sec-sub">Clique sur un champ pour le modifier directement</div></div>
@@ -515,7 +499,6 @@
     <div id="dataTable"></div>
   </div>
 
-  <!-- ══ PAGE 4 : Ajouter ═════════════════════════════════ -->
   <div class="pg" id="tab4">
     <div class="sec-hdr">
       <div><div class="sec-title">Ajouter une transaction</div><div class="sec-sub">Enregistre un revenu, un trade, une dépense ou tout autre mouvement</div></div>
@@ -569,12 +552,9 @@
     </div>
   </div>
 
-</div><!-- /app -->
+</div>
 
 <script>
-// ════════════════════════════════════════════════════════
-//  DONNÉES
-// ════════════════════════════════════════════════════════
 const MO = ['Jan','Fév','Mar','Avr','Mai','Jun','Jul','Aoû','Sep','Oct','Nov','Déc'];
 const MO_F = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
 
@@ -588,12 +568,8 @@ const CATS = {
   depenses:       { label:'Dépenses',       icon:'ti-receipt',       bg:'#2d0f0f', ic:'#f43f5e', bar:'#f43f5e', sign:-1 },
 };
 
-// Les transactions sont chargées depuis Supabase une fois connecté (voir fetchTransactions()).
 const DB = {};
 
-// ════════════════════════════════════════════════════════
-//  COULEURS
-// ════════════════════════════════════════════════════════
 const DFLTS = {
   pos:'#22d3a0', neg:'#f43f5e',
   charts:['#22d3a0','#888780','#3b9eff'],
@@ -665,29 +641,22 @@ function buildCatSwatches() {
 function openPanel()  { document.getElementById('colorPanel').classList.add('open'); document.getElementById('overlay').classList.add('on'); }
 function closePanel() { document.getElementById('colorPanel').classList.remove('open'); document.getElementById('overlay').classList.remove('on'); }
 
-// ════════════════════════════════════════════════════════
-//  UTILITAIRES
-// ════════════════════════════════════════════════════════
 let yr = 2026, pChart = null, fChart = null, fAreaChart = null, pieChart = null;
 const fmt = n => new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
 const fmtS = n => (n >= 0 ? '+' : '') + fmt(n);
 const rows = () => DB[yr] || [];
 
-// Nombre de mois à afficher sur les graphiques (12 max, ou jusqu'au mois actuel pour l'année en cours)
 const months = () => {
   const now = new Date();
   const currentYear = now.getFullYear();
-  if (yr === currentYear) return now.getMonth() + 1; // mois actuel inclus
-  if (yr > currentYear) return 1; // année future : au moins 1
-  return 12; // années passées : 12 mois
+  if (yr === currentYear) return now.getMonth() + 1;
+  if (yr > currentYear) return 1;
+  return 12;
 };
 
 const msum = (cat, m) => rows().filter(e => e.cat===cat && e.month===m).reduce((s,e) => s+e.amt, 0);
-// catTotal additionne TOUTES les entrées de la catégorie, sans filtre de mois
 const catTotal = cat => rows().filter(e => e.cat===cat).reduce((s,e) => s+e.amt, 0);
 
-// Index du mois "courant" à considérer : le mois actuel pour l'année en cours,
-// sinon le dernier mois affiché (décembre pour une année passée).
 const currentMonthIdx = () => months() - 1;
 
 function calcKPI() {
@@ -701,7 +670,6 @@ function calcKPI() {
   return { rev, exp, trd, net: rev+trd-exp };
 }
 
-// Même calcul que calcKPI() mais limité à un seul mois (m), pour le budget mensuel.
 function calcMonthKPI(m) {
   let rev=0, exp=0, trd=0;
   Object.keys(CATS).forEach(k => {
@@ -723,16 +691,10 @@ function renderKPI(id, items) {
   ).join('');
 }
 
-// ════════════════════════════════════════════════════════
-//  RENDER FUNCTIONS
-// ════════════════════════════════════════════════════════
 function renderAll() {
   const {rev,exp,trd,net} = calcKPI();
-  // Budget mensuel = 10% de l'argent net du mois en cours (revenus + trading - dépenses
-  // DU MOIS), et non 10% de la fortune totale accumulée.
   const monthKPI = calcMonthKPI(currentMonthIdx());
   const budget = Math.max(monthKPI.net, 0) * 0.10;
-  // Onglet "PNL" : widgets simples inchangés.
   const kpisPNL = [
     {l:'Gains totaux',  v:fmt(rev+trd), c:CLR.pos},
     {l:'Trading PNL',   v:fmt(trd),     c:CLR.charts[2]},
@@ -746,12 +708,10 @@ function renderAll() {
   renderFortune();
 }
 
-// ── Boîte partagée : nom + total en haut, bouton d'agrandissement, transactions en dessous ─────
 function catBoxHTML(label, total, colorHex, entries) {
   const sign = total < 0 ? '-' : '+';
   const txHtml = entries.length
     ? entries.map(e => {
-        // Couleur par catégorie : trading = bleu, dépenses = rouge, tout le reste = vert.
         const amtColor = e.cat === 'trading' ? CLR.charts[2]
           : (CATS[e.cat] && CATS[e.cat].sign < 0) ? CLR.neg
           : CLR.pos;
@@ -772,7 +732,6 @@ function catBoxHTML(label, total, colorHex, entries) {
     +'</div>';
 }
 
-// Agrandit/réduit la liste de transactions d'une boîte, avec défilement à la souris.
 function toggleBoxExpand(btn) {
   const card = btn.closest('.cat-card');
   if (!card) return;
@@ -784,13 +743,10 @@ function toggleBoxExpand(btn) {
   btn.title = expanded ? 'Réduire' : 'Voir toutes les transactions';
 }
 
-// ── Les 3 boîtes du haut : Gains totaux, Dépenses, Trading PNL ───────
 function renderTopBoxes() {
   const el = document.getElementById('kpi0');
   if (!el) return;
   const {rev,exp,trd} = calcKPI();
-  // Toutes les transactions (pas seulement les 4 dernières) — la vue repliée
-  // n'en montre que le haut, le bouton agrandir permet de tout voir en défilant.
   const gainEntries  = rows().filter(e => CATS[e.cat] && CATS[e.cat].sign > 0).slice().reverse();
   const expEntries   = rows().filter(e => e.cat === 'depenses').slice().reverse();
   const tradeEntries = rows().filter(e => e.cat === 'trading').slice().reverse();
@@ -800,11 +756,7 @@ function renderTopBoxes() {
     + catBoxHTML('Trading PNL', trd, CLR.charts[2], tradeEntries);
 }
 
-
-
-// ── PNL chart ─────────────────────────────────────────
 function renderPNL() {
-  // Affiche tous les mois qui ont au moins une entrée, ou les 12 mois pour les années passées
   const allEntries = rows();
   const maxMonth = allEntries.length > 0 ? Math.max(...allEntries.map(e => e.month)) + 1 : months();
   const m = Math.max(months(), maxMonth);
@@ -813,12 +765,8 @@ function renderPNL() {
   const cumD = Array.from({length:m}, (_,i) => {
     let n = 0; Object.keys(CATS).forEach(k => { n += CATS[k].sign * msum(k,i); }); cum += n; return Math.round(cum);
   });
-  // Trading cumulé : le total ne retombe pas à zéro chaque mois, il reste au
-  // niveau atteint (ex: +100 reste affiché tant qu'aucun nouveau trade n'est ajouté).
   let cumTrd = 0;
   const trdD = Array.from({length:m}, (_,i) => { cumTrd += msum('trading',i); return Math.round(cumTrd); });
-  // Dépenses cumulées (positives) : le total ne retombe pas à zéro chaque mois,
-  // il continue d'augmenter avec les dépenses passées.
   let cumExp = 0;
   const expD = Array.from({length:m}, (_,i) => { cumExp += msum('depenses',i); return Math.round(cumExp); });
   const gc = 'rgba(255,255,255,.05)', tc = 'rgba(255,255,255,.3)';
@@ -835,558 +783,3 @@ function renderPNL() {
       interaction:{mode:'index',intersect:false},
       plugins:{
         legend:{display:false},
-        tooltip:{callbacks:{label:c=>{ const v=c.raw; return ' '+c.dataset.label+' : '+(v<0?'-':'')+fmt(Math.abs(v)); }}}
-      },
-      scales:{
-        x:{grid:{color:gc}, ticks:{color:tc, font:{size:11,family:'Inter'}, autoSkip:false}},
-        y:{grid:{color:gc}, ticks:{color:tc, font:{size:11,family:'Inter'}, callback:v=>{ const a=Math.abs(v); return (v<0?'-':'')+(a>=1000?(a/1000).toFixed(0)+'k':a)+'€'; }}}
-      }
-    }
-  });
-  // legend
-  const leg = document.getElementById('pnlLegend');
-  if (leg) leg.innerHTML = [
-    ['<span style="display:inline-block;width:20px;height:2px;background:'+CLR.charts[0]+';border-radius:2px;vertical-align:middle"></span>','PNL cumulé'],
-    ['<span style="display:inline-block;width:20px;height:2px;background:'+CLR.charts[2]+';border-radius:2px;vertical-align:middle"></span>','Trading'],
-    ['<span style="display:inline-block;width:20px;height:2px;background:'+CLR.neg+';border-radius:2px;vertical-align:middle"></span>','Dépenses'],
-  ].map(([icon,txt])=>'<div class="leg-item">'+icon+'<span>'+txt+'</span></div>').join('');
-}
-
-// ── Fortune ───────────────────────────────────────────
-function renderFortune() {
-  const {rev,exp,trd,net} = calcKPI();
-  document.getElementById('fortSplit').innerHTML =
-    '<div class="fort-card"><div class="fort-card-label">Total gains</div><div class="fort-card-value" style="color:'+CLR.pos+'">+'+fmt(rev+trd)+'</div></div>'
-    +'<div class="fort-card"><div class="fort-card-label">Total dépenses</div><div class="fort-card-value" style="color:'+CLR.neg+'">-'+fmt(exp)+'</div></div>'
-    +'<div class="fort-card"><div class="fort-card-label">Fortune nette</div><div class="fort-card-value" style="color:'+(net>=0?CLR.pos:CLR.neg)+'">'+fmtS(net)+'</div></div>';
-
-  const rows2 = Object.keys(CATS).map(k => ({
-    key: k,
-    label: CATS[k].label,
-    val: k === 'trading' ? trd : (CATS[k].sign < 0 ? -catTotal(k) : catTotal(k)),
-  }));
-  const rowsHtml = rows2.map(r => {
-    // Couleur par catégorie : trading = bleu, sinon vert/rouge selon le signe.
-    const color = r.key === 'trading' ? CLR.charts[2] : (r.val>=0 ? CLR.pos : CLR.neg);
-    return '<div class="fort-row">'
-    +'<div class="fort-row-label">'+r.label+'</div>'
-    +'<div class="fort-row-val" style="color:'+color+'">'+(r.val>=0?'+':'')+fmt(r.val)+'</div>'
-    +'</div>';
-  }).join('');
-  document.getElementById('fortRows').innerHTML = rowsHtml
-    + '<div class="fort-total">'
-    + '<div class="fort-total-label">Fortune nette</div>'
-    + '<div class="fort-total-val" style="color:'+(net>=0?CLR.pos:CLR.neg)+'">'+fmtS(net)+'</div>'
-    + '</div>';
-
-  const allE = rows();
-  const maxMo = allE.length > 0 ? Math.max(...allE.map(e => e.month)) + 1 : months();
-  const m = Math.max(months(), maxMo);
-  const labels = MO.slice(0, m);
-  let c2 = 0;
-  const cumF = Array.from({length:m}, (_,i) => {
-    let n=0; Object.keys(CATS).forEach(k=>{ n+=CATS[k].sign*msum(k,i); }); c2+=n; return Math.round(c2);
-  });
-  const gc = 'rgba(255,255,255,.05)', tc = 'rgba(255,255,255,.3)';
-  if (fChart) { fChart.destroy(); fChart = null; }
-  fChart = new Chart(document.getElementById('fortCanvas'), {
-    type:'bar',
-    data:{ labels, datasets:[{
-      label:'Fortune', data:cumF,
-      backgroundColor: cumF.map(v => v>=0 ? ha(CLR.pos,.2) : ha(CLR.neg,.2)),
-      borderColor: cumF.map(v => v>=0 ? CLR.pos : CLR.neg),
-      borderWidth:1.5, borderRadius:5,
-    }]},
-    options:{
-      responsive:true, maintainAspectRatio:false,
-      plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>{ const v=c.raw; return ' '+(v<0?'-':'')+fmt(Math.abs(v)); }}}},
-      scales:{
-        x:{grid:{color:gc}, ticks:{color:tc, font:{size:11,family:'Inter'}, autoSkip:false}},
-        y:{grid:{color:gc}, ticks:{color:tc, font:{size:11,family:'Inter'}, callback:v=>{ const a=Math.abs(v); return (v<0?'-':'')+(a>=1000?(a/1000).toFixed(0)+'k':a)+'€'; }}}
-      }
-    }
-  });
-
-  renderFortuneArea();
-  renderPie();
-}
-
-// ── Fortune — courbe style aire (verte) ────────────────
-function renderFortuneArea() {
-  const canvas = document.getElementById('fortAreaCanvas');
-  if (!canvas) return;
-  const allE = rows();
-  const maxMo = allE.length > 0 ? Math.max(...allE.map(e => e.month)) + 1 : months();
-  const m = Math.max(months(), maxMo);
-  const labels = MO.slice(0, m);
-  let c = 0;
-  const cumF = Array.from({length:m}, (_,i) => {
-    let n=0; Object.keys(CATS).forEach(k=>{ n+=CATS[k].sign*msum(k,i); }); c+=n; return Math.round(c);
-  });
-  const gc = 'rgba(255,255,255,.05)', tc = 'rgba(255,255,255,.3)';
-  const ctx = canvas.getContext('2d');
-  const grad = ctx.createLinearGradient(0, 0, 0, 280);
-  grad.addColorStop(0, ha(CLR.pos, .35));
-  grad.addColorStop(1, ha(CLR.pos, 0));
-
-  if (fAreaChart) { fAreaChart.destroy(); fAreaChart = null; }
-  fAreaChart = new Chart(canvas, {
-    type:'line',
-    data:{ labels, datasets:[{
-      data: cumF, borderColor: CLR.pos, backgroundColor: grad, fill:true,
-      tension:.45, borderWidth:3, pointRadius:0, pointHoverRadius:5,
-      pointHoverBackgroundColor: CLR.pos, pointHoverBorderColor:'#fff',
-    }]},
-    options:{
-      responsive:true, maintainAspectRatio:false,
-      interaction:{mode:'index',intersect:false},
-      plugins:{
-        legend:{display:false},
-        tooltip:{callbacks:{label:c=>' '+fmtS(c.raw)}}
-      },
-      scales:{
-        x:{grid:{display:false}, ticks:{color:tc, font:{size:11,family:'Inter'}}},
-        y:{grid:{color:gc}, ticks:{color:tc, font:{size:11,family:'Inter'}, callback:v=> new Intl.NumberFormat('fr-FR').format(v)+' €'}}
-      }
-    }
-  });
-}
-
-// ── Fortune — camembert des sources de revenus ─────────
-function renderPie() {
-  const canvas = document.getElementById('pieCanvas');
-  if (!canvas) return;
-  const incomeCats = Object.keys(CATS).filter(k => CATS[k].sign > 0);
-  const vals = incomeCats.map(k => Math.max(catTotal(k), 0));
-  const total = vals.reduce((a,b) => a+b, 0);
-  const colors = incomeCats.map(k => CLR.cats[k].bar);
-
-  if (pieChart) { pieChart.destroy(); pieChart = null; }
-  pieChart = new Chart(canvas, {
-    type:'doughnut',
-    data:{ labels: incomeCats.map(k => CATS[k].label), datasets:[{
-      data: vals, backgroundColor: colors, borderColor:'#13131a', borderWidth:2, hoverOffset:6,
-    }]},
-    options:{
-      responsive:true, maintainAspectRatio:false, cutout:'62%',
-      plugins:{
-        legend:{display:false},
-        tooltip:{callbacks:{label:c=>{ const v=c.raw; const pct = total>0 ? (v/total*100).toFixed(1) : '0.0'; return ' '+c.label+' : '+fmt(v)+' ('+pct+'%)'; }}}
-      }
-    }
-  });
-
-  const leg = document.getElementById('pieLegend');
-  if (leg) {
-    if (!total) { leg.innerHTML = '<p style="color:var(--txt3);font-size:12px">Aucune donnée.</p>'; }
-    else {
-      leg.innerHTML = incomeCats.map((k,i) => {
-        const v = vals[i], pct = (v/total*100).toFixed(1);
-        return '<div class="pie-leg-item">'
-          + '<span class="pie-leg-name">'+CATS[k].label+'</span>'
-          + '<span class="pie-leg-val">'+fmt(v)+' · '+pct+'%</span>'
-          + '</div>';
-      }).join('');
-    }
-  }
-}
-
-// ── Data table ────────────────────────────────────────
-function renderDataTable() {
-  const entries = DB[yr] || [];
-  const tbl = document.getElementById('dataTable');
-  if (!tbl) return;
-  if (!entries.length) { tbl.innerHTML = '<p style="color:var(--txt3);padding:2rem 0;text-align:center">Aucune donnée.</p>'; return; }
-
-  let html = '';
-  Object.keys(CATS).forEach(cat => {
-    const catEntries = entries.filter(e => e.cat === cat);
-    if (!catEntries.length) return;
-    const isExp = CATS[cat].sign < 0;
-    const total = catEntries.reduce((s,e) => s+e.amt, 0);
-    const hdrColor = cat === 'trading' ? CLR.charts[2] : (isExp ? 'var(--neg)' : 'var(--pos)');
-    html += '<div class="tbl-section">'
-      + '<div class="tbl-cat-hdr" onclick="toggleSection(\'tbl-body-'+cat+'\',\'tbl-arrow-'+cat+'\')">'
-      + '<span class="tbl-cat-lbl">'+CATS[cat].label+'</span>'
-      + '<span class="tbl-cat-info">'+catEntries.length+' ligne'+(catEntries.length>1?'s':'')+' &nbsp;·&nbsp; <span style="color:'+hdrColor+';">'+(isExp?'-':'')+fmt(Math.abs(total))+'</span></span>'
-      + '<button class="clear-cat-btn" onclick="event.stopPropagation();delAllCat('+yr+',\''+cat+'\')" title="Tout supprimer"><i class="ti ti-trash" style="font-size:11px;margin-right:3px"></i>Tout vider</button>'
-      + '<i class="ti ti-chevron-right tbl-cat-arrow" id="tbl-arrow-'+cat+'"></i>'
-      + '</div>'
-      + '<div class="tbl-body" id="tbl-body-'+cat+'">'
-      + '<div class="tbl-header">'
-      + '<div class="tbl-hcell">Description</div>'
-      + '<div class="tbl-hcell">Mois</div>'
-      + '<div class="tbl-hcell">Catégorie</div>'
-      + '<div class="tbl-hcell" style="text-align:right">Montant €</div>'
-      + '<div class="tbl-hcell"></div>'
-      + '</div>';
-
-    catEntries.forEach(e => {
-      const gi = entries.indexOf(e);
-      const moOpts = MO.map((mo,i) => '<option value="'+i+'"'+(i===e.month?' selected':'')+'>'+mo+'</option>').join('');
-      const catOpts = Object.keys(CATS).map(k => '<option value="'+k+'"'+(k===e.cat?' selected':'')+'>'+CATS[k].label+'</option>').join('');
-      html += '<div class="tbl-row">'
-        + '<div><input class="cell-inp" value="'+escHtml(e.desc)+'" onchange="upd('+yr+','+gi+',\'desc\',this.value)" style="min-width:80px"></div>'
-        + '<div><select class="cell-sel" onchange="upd('+yr+','+gi+',\'month\',parseInt(this.value));renderAll()">'+moOpts+'</select></div>'
-        + '<div><select class="cell-sel" onchange="upd('+yr+','+gi+',\'cat\',this.value);renderAll()">'+catOpts+'</select></div>'
-        + '<div><input class="cell-inp" type="number" value="'+e.amt+'" onchange="upd('+yr+','+gi+',\'amt\',parseFloat(this.value)||0)" onblur="renderAll()" style="text-align:right"></div>'
-        + '<div style="text-align:center"><button class="del-btn" onclick="del('+yr+','+gi+')"><i class="ti ti-trash"></i></button></div>'
-        + '</div>';
-    });
-    html += '</div></div>';
-  });
-  tbl.innerHTML = html;
-}
-
-function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-function toggleSection(bodyId, arrowId) {
-  const body = document.getElementById(bodyId), arrow = document.getElementById(arrowId);
-  if (!body) return;
-  body.classList.toggle('open');
-  if (arrow) arrow.classList.toggle('open');
-}
-async function upd(y, idx, field, val) {
-  if (!DB[y] || !DB[y][idx]) return;
-  const entry = DB[y][idx];
-  entry[field] = val;
-  // Même normalisation que doAdd() : si le montant ou la catégorie change,
-  // on force une magnitude positive pour les catégories de type "dépense".
-  if (CATS[entry.cat] && CATS[entry.cat].sign < 0) entry.amt = Math.abs(entry.amt);
-  if (entry.id) {
-    const { error } = await supabaseClient
-      .from('transactions')
-      .update({ cat: entry.cat, desc: entry.desc, month: entry.month, amt: entry.amt })
-      .eq('id', entry.id);
-    if (error) console.error('Erreur de mise à jour Supabase :', error);
-  }
-}
-async function del(y, idx) {
-  if (!DB[y]) return;
-  const entry = DB[y][idx];
-  const openSections = [];
-  document.querySelectorAll('.tbl-body.open').forEach(el => openSections.push(el.id));
-  DB[y].splice(idx, 1);
-  renderAll();
-  openSections.forEach(id => {
-    const body = document.getElementById(id);
-    const cat = id.replace('tbl-body-', '');
-    const arrow = document.getElementById('tbl-arrow-' + cat);
-    if (body) { body.classList.add('open'); }
-    if (arrow) { arrow.classList.add('open'); }
-  });
-  if (entry && entry.id) {
-    const { error } = await supabaseClient.from('transactions').delete().eq('id', entry.id);
-    if (error) console.error('Erreur de suppression Supabase :', error);
-  }
-}
-async function delAllCat(y, cat) {
-  if (!DB[y]) return;
-  // Garde les sections ouvertes avant le re-render
-  const openSections = [];
-  document.querySelectorAll('.tbl-body.open').forEach(el => openSections.push(el.id));
-  // Supprime toutes les entrées de cette catégorie pour cette année
-  DB[y] = DB[y].filter(e => e.cat !== cat);
-  renderAll();
-  // Réouvre les sections (sauf celle qu'on vient de vider si elle n'existe plus)
-  openSections.forEach(id => {
-    const body = document.getElementById(id);
-    const c = id.replace('tbl-body-', '');
-    const arrow = document.getElementById('tbl-arrow-' + c);
-    if (body) { body.classList.add('open'); }
-    if (arrow) { arrow.classList.add('open'); }
-  });
-  const { error } = await supabaseClient.from('transactions').delete().eq('year', y).eq('cat', cat);
-  if (error) console.error('Erreur de suppression Supabase :', error);
-}
-
-// ════════════════════════════════════════════════════════
-//  NAV & YEAR
-// ════════════════════════════════════════════════════════
-function goTab(idx, btn) {
-  document.querySelectorAll('.pg').forEach((p,i) => p.classList.toggle('on', i===idx));
-  document.querySelectorAll('.nb').forEach(b => b.classList.remove('on'));
-  btn.classList.add('on');
-  if (idx===1) setTimeout(renderPNL,60);
-  if (idx===2) setTimeout(renderFortune,60);
-}
-
-// ── Sélecteur d'année (année libre, saisie manuelle) ───
-function renderYrSwitch() {
-  const el = document.getElementById('yrSwitch');
-  if (!el) return;
-  el.innerHTML = '<span class="yr-current">'+yr+'</span>'
-    + '<button class="yr-edit-btn" onclick="startYrEdit()" title="Changer d\'année"><i class="ti ti-calendar-event"></i></button>';
-}
-function startYrEdit() {
-  const el = document.getElementById('yrSwitch');
-  if (!el) return;
-  el.innerHTML = '<input type="number" id="yrInput" class="yr-input" value="'+yr+'">'
-    + '<button class="yr-edit-btn" onclick="confirmYrEdit()" title="Valider"><i class="ti ti-check"></i></button>';
-  const inp = document.getElementById('yrInput');
-  if (inp) {
-    inp.focus(); inp.select();
-    inp.addEventListener('keydown', e => { if (e.key==='Enter') confirmYrEdit(); });
-  }
-}
-function confirmYrEdit() {
-  const inp = document.getElementById('yrInput');
-  const v = inp ? parseInt(inp.value) : NaN;
-  if (!isNaN(v) && v > 1900 && v < 3000) yr = v;
-  renderYrSwitch();
-  renderAll();
-}
-
-// ════════════════════════════════════════════════════════
-//  ADD
-// ════════════════════════════════════════════════════════
-async function doAdd() {
-  if (!currentUser) return;
-  const cat   = document.getElementById('aCat').value;
-  const desc  = document.getElementById('aDesc').value.trim() || 'Entrée';
-  const month = parseInt(document.getElementById('aMon').value);
-  let amt     = parseFloat(document.getElementById('aAmt').value) || 0;
-  // Les catégories de type "dépense" (sign < 0) sont toujours stockées en magnitude
-  // positive : le signe négatif est appliqué automatiquement au calcul/affichage.
-  // Sans ça, saisir "-30" au lieu de "30" annule le signe deux fois (bug de calcul).
-  if (CATS[cat] && CATS[cat].sign < 0) amt = Math.abs(amt);
-  const { data, error } = await supabaseClient
-    .from('transactions')
-    .insert({ user_id: currentUser.id, cat, desc, month, year: yr, amt })
-    .select()
-    .single();
-  if (error) { console.error('Erreur d\'ajout Supabase :', error); return; }
-  if (!DB[yr]) DB[yr] = [];
-  DB[yr].push({ id: data.id, cat, desc, month, amt });
-  document.getElementById('aDesc').value = '';
-  document.getElementById('aAmt').value  = '';
-  renderAll();
-}
-
-// ════════════════════════════════════════════════════════
-//  NOUVELLE CATÉGORIE (nouvelle source de revenu / dépense)
-// ════════════════════════════════════════════════════════
-const NEW_CAT_COLORS = ['#22d3a0','#3b9eff','#f59e0b','#a78bfa','#2dd4bf','#f472b6','#facc15','#38bdf8','#fb923c','#4ade80'];
-let newCatColorIdx = 0;
-
-function toggleNewCat() {
-  const box = document.getElementById('newCatBox');
-  if (!box) return;
-  box.style.display = box.style.display === 'none' ? 'block' : 'none';
-}
-function slugifyCat(str) {
-  const base = str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'_').replace(/(^_+|_+$)/g,'');
-  return 'cat_' + (base || Date.now());
-}
-function createCategory() {
-  const nameInp = document.getElementById('ncName');
-  const name = nameInp.value.trim();
-  if (!name) { nameInp.focus(); return; }
-  const sign = 1;
-
-  let key = slugifyCat(name), base = key, n = 1;
-  while (CATS[key]) key = base + '_' + (n++);
-
-  const color = NEW_CAT_COLORS[newCatColorIdx % NEW_CAT_COLORS.length];
-  newCatColorIdx++;
-
-  CATS[key] = { label:name, icon:'ti-tag', bg:color+'22', ic:color, bar:color, sign };
-  CLR.cats[key] = { bg:CATS[key].bg, ic:color, bar:color };
-
-  selectCat(key);
-
-  nameInp.value = '';
-  document.getElementById('newCatBox').style.display = 'none';
-  buildCatSwatches();
-  syncSwatches();
-}
-
-// ── Menu déroulant personnalisé (catégorie) avec suppression inline ──
-function toggleCatDropdown() {
-  const menu = document.getElementById('aCatMenu');
-  if (!menu) return;
-  const open = menu.style.display !== 'none';
-  menu.style.display = open ? 'none' : 'block';
-  if (!open) renderCatSelect();
-}
-function renderCatSelect() {
-  const cur = document.getElementById('aCat').value;
-  const labelEl = document.getElementById('aCatLabel');
-  if (labelEl && CATS[cur]) labelEl.textContent = CATS[cur].label;
-
-  const menu = document.getElementById('aCatMenu');
-  if (!menu) return;
-  menu.innerHTML = Object.keys(CATS).map(k =>
-    '<div class="custom-select-opt'+(k===cur?' sel':'')+'">'
-    + '<span class="custom-select-opt-name" onclick="selectCat(\''+k+'\')">'+CATS[k].label+'</span>'
-    + '<button type="button" class="chip-del" onclick="event.stopPropagation(); deleteCategory(\''+k+'\')" title="Supprimer cette catégorie">&times;</button>'
-    + '</div>'
-  ).join('');
-}
-function selectCat(key) {
-  document.getElementById('aCat').value = key;
-  const labelEl = document.getElementById('aCatLabel');
-  if (labelEl && CATS[key]) labelEl.textContent = CATS[key].label;
-  const menu = document.getElementById('aCatMenu');
-  if (menu) menu.style.display = 'none';
-}
-document.addEventListener('click', e => {
-  const wrap = document.getElementById('aCatWrap');
-  const menu = document.getElementById('aCatMenu');
-  if (wrap && menu && !wrap.contains(e.target)) menu.style.display = 'none';
-});
-
-async function deleteCategory(key) {
-  if (!CATS[key]) return;
-  if (Object.keys(CATS).length <= 1) { alert('Il doit rester au moins une catégorie.'); return; }
-
-  let count = 0;
-  Object.keys(DB).forEach(y => { count += (DB[y]||[]).filter(e => e.cat===key).length; });
-  const label = CATS[key].label;
-  const msg = count > 0
-    ? 'Supprimer la catégorie "'+label+'" supprimera aussi '+count+' transaction'+(count>1?'s':'')+' associée'+(count>1?'s':'')+'. Continuer ?'
-    : 'Supprimer la catégorie "'+label+'" ?';
-  if (!confirm(msg)) return;
-
-  Object.keys(DB).forEach(y => { DB[y] = (DB[y]||[]).filter(e => e.cat!==key); });
-  delete CATS[key];
-  delete CLR.cats[key];
-
-  if (document.getElementById('aCat').value === key) {
-    const remaining = Object.keys(CATS);
-    if (remaining.length) selectCat(remaining[0]);
-  }
-
-  buildCatSwatches();
-  syncSwatches();
-  renderCatSelect();
-  renderAll();
-
-  const { error } = await supabaseClient.from('transactions').delete().eq('cat', key);
-  if (error) console.error('Erreur de suppression Supabase :', error);
-}
-
-// ════════════════════════════════════════════════════════
-//  SUPABASE — connexion Google + stockage cloud
-// ════════════════════════════════════════════════════════
-const SUPABASE_URL = 'https://jmbpivlywvobwyzjmtzj.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImptYnBpdmx5d3ZvYnd5emptdHpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk4NTU1MzksImV4cCI6MjEwNTQzMTUzOX0.AYUQtDChcWzyMU-sRty0grn9l78lvNaIeXCIHLBzJvA';
-const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-let currentUser = null;
-
-// ── Connexion par email + code choisi par l'utilisateur (mot de passe) ──
-async function login() {
-  const email = document.getElementById('loginEmail').value.trim();
-  const code  = document.getElementById('loginCode').value;
-  const errEl = document.getElementById('loginErr');
-  errEl.style.display = 'none';
-
-  if (!email || !email.includes('@')) {
-    errEl.textContent = 'Entre une adresse email valide.';
-    errEl.style.display = 'block';
-    return;
-  }
-  if (!code || code.length < 6) {
-    errEl.textContent = 'Le code doit faire au moins 6 caractères.';
-    errEl.style.display = 'block';
-    return;
-  }
-
-  // 1. On tente d'abord une connexion classique (compte déjà existant)
-  let { error } = await supabaseClient.auth.signInWithPassword({ email, password: code });
-  if (!error) return; // connecté → onAuthStateChange affiche l'app
-
-  // 2. Si ça échoue, on suppose que c'est la 1ère connexion : on crée le compte
-  const { data, error: signUpError } = await supabaseClient.auth.signUp({ email, password: code });
-  if (signUpError) {
-    errEl.textContent = signUpError.message.includes('Password')
-      ? 'Le code doit faire au moins 6 caractères.'
-      : 'Email ou code incorrect.';
-    errEl.style.display = 'block';
-    return;
-  }
-  if (!data.session) {
-    // La confirmation par email est activée côté Supabase : il faut cliquer le lien reçu.
-    errEl.style.color = 'var(--pos)';
-    errEl.textContent = 'Compte créé ! Vérifie ta boîte mail pour confirmer, puis reconnecte-toi avec ce même code.';
-    errEl.style.display = 'block';
-  }
-  // Sinon (confirmation email désactivée) : data.session existe déjà → onAuthStateChange affiche l'app
-}
-
-async function signOut() {
-  await supabaseClient.auth.signOut();
-}
-
-function showLogin() {
-  document.getElementById('loginScreen').style.display = 'flex';
-  document.getElementById('appRoot').style.display = 'none';
-}
-
-function showApp() {
-  document.getElementById('loginScreen').style.display = 'none';
-  document.getElementById('appRoot').style.display = '';
-}
-
-// Corrige les entrées où un montant de dépense aurait été saisi en négatif
-// (ex: -30 au lieu de 30), ce qui faussait Fortune nette.
-function sanitizeExpenseSigns() {
-  Object.keys(DB).forEach(y => {
-    (DB[y]||[]).forEach(e => {
-      if (CATS[e.cat] && CATS[e.cat].sign < 0) e.amt = Math.abs(e.amt);
-    });
-  });
-}
-
-// Charge toutes les transactions de l'utilisateur connecté depuis Supabase
-// et reconstruit l'objet DB {année: [...]} attendu par le reste de l'app.
-async function fetchTransactions() {
-  const { data, error } = await supabaseClient
-    .from('transactions')
-    .select('*')
-    .order('id', { ascending: true });
-  if (error) { console.error('Erreur de chargement Supabase :', error); return; }
-  Object.keys(DB).forEach(y => delete DB[y]);
-  (data || []).forEach(row => {
-    const y = row.year;
-    if (!DB[y]) DB[y] = [];
-    DB[y].push({ id: row.id, cat: row.cat, desc: row.desc, month: row.month, amt: row.amt });
-  });
-}
-
-async function handleSignedIn(session) {
-  currentUser = session.user;
-  await fetchTransactions();
-  sanitizeExpenseSigns();
-  applyCSSColors();
-  buildCatSwatches();
-  syncSwatches();
-  renderYrSwitch();
-  renderCatSelect();
-  renderAll();
-  showApp();
-}
-
-async function initAuth() {
-  const { data: { session } } = await supabaseClient.auth.getSession();
-  if (session) {
-    await handleSignedIn(session);
-  } else {
-    showLogin();
-  }
-  supabaseClient.auth.onAuthStateChange(async (event, newSession) => {
-    if (event === 'SIGNED_IN' && newSession) {
-      await handleSignedIn(newSession);
-    } else if (event === 'SIGNED_OUT') {
-      currentUser = null;
-      showLogin();
-    }
-  });
-}
-
-// ════════════════════════════════════════════════════════
-//  INIT
-// ════════════════════════════════════════════════════════
-initAuth();
-</script>
-</body>
-</html>
